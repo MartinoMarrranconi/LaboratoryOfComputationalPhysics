@@ -14,7 +14,7 @@ To start with, you need to have a github account. If you don't have one, go to [
 
 Suggestion: use a reasonable username that resembles your actual name.  
 
-Once you have your github, as first thing fork this repository, i.e. go [there](https://github.com/PhysicsOfData/LaboratoryOfComputationalPhysics) and click on the top-right button *fork*
+Once you have your github, as first thing fork this repository, i.e. go [there](https://github.com/mzanetti79/LaboratoryOfComputationalPhysics) and click on the top-right button *fork*
 
 ### Setting up a local repository
 
@@ -36,9 +36,9 @@ In particular, if you are working in a location where such repo already exist, w
 
 (you must have understood what capital-letters-words stand for). Your git configuration is stored in `.gitconfig`, a file that you can alwasy edit by hand or via the `git config ..` commands.
 
-* Define PhysicsOfData's repo as the upstream repository (you may need to set the url too), check that actually succeeded and get (fetch) the updates that have been done on the remote repository:
+* Define mzanetti79's repo as the upstream repository (you may need to set the url too), check that actually succeeded and get (fetch) the updates that have been done on the remote repository:
 
-`git remote add upstream https://github.com/PhysicsOfData/LaboratoryOfComputationalPhysics.git`
+`git remote add upstream https://github.com/mzanetti79/LaboratoryOfComputationalPhysics.git`
 
 `git remote set-url origin https://YOUR_GIT_ACCOUNT@github.com/YOUR_GIT_ACCOUNT/LaboratoryOfComputationalPhysics.git`
 
@@ -56,7 +56,7 @@ Note that the case you decide do make your development in a branch that does NOT
 
 ### Standard development cycle
 
-  * Before starting with the development you could check whether the orginal repository (PhysicsOfData's one) have been updated with respect to your forked version (that's likely to be the case prior to every lab class). If it had, then merge the chances into your master.
+  * Before starting with the development you could check whether the orginal repository (mzanetti79's one) have been updated with respect to your forked version (that's likely to be the case prior to every lab class). If it had, then merge the chances into your master.
 
   `git fetch upstream`
 
@@ -67,7 +67,7 @@ Note that the case you decide do make your development in a branch that does NOT
   The idea is that your master always reflects `upstream/master`, i.e. it keeps a local copy of the reference code as a starting point for your developments (i.e. solving the assigned problems).
   Note that in order to update your repository on github, you need to push the local version (see later).
 
-  * In the case a pull request of yours to PhysicsOfData has been recently approved, you also need to synch your development branch:
+  * In the case a pull request of yours to mzanetti79 has been recently approved, you also need to synch your development branch:
 
   `git checkout TRACKING_BRANCH_NAME`
 
@@ -91,4 +91,4 @@ Note that the case you decide do make your development in a branch that does NOT
 
  `git push origin TRACKING_BRANCH_NAME`
 
- * Finally you may want to propagate your development also to the repo you originally forked from, i.e. PhysicsOfData's one (this is likely to happen anytime you'll be asked to deliver your homework!). For that you need to go for a "pull request", which is done from github itself. Be carefull to point your pull request to `PhysicsOfData/name_surname`
+ * Finally you may want to propagate your development also to the repo you originally forked from, i.e. mzanetti79's one (this is likely to happen anytime you'll be asked to deliver your homework!). For that you need to go for a "pull request", which is done from github itself. Be carefull to point your pull request to `mzanetti79/name_surname`
